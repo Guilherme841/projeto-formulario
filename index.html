@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <section id="titulo">
+        <h1>freeCodeCamp Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    </section>
+    <section id="formulario">
+        <form autocomplete="on" action="script.js" method="post">
+            <div><label for="inome">Nome</label></div>
+            <div><input maxlength="30" autocomplete="name" required placeholder="Digite seu nome" type="text" name="nome" id="inome"></div>
+            <div><label for="iemail">Email</label></div>
+            <div><input maxlength="30" autocomplete="email" required placeholder="Insira um email válido" type="email" name="email" id="iemail"></div>
+            <div><label for="iidade">Idade (opcional)</label></div>
+            <div><input max="120" autocomplete="cc-number" required placeholder="Idade" type="number" name="idade" id="iidade"></div>
+            <div><label for="iprofissao">Qual opção melhor descreve sua função atual?</label></div>
+            <div>
+                <select required name="profissao" id="iprofissao">
+                        <option disabled selected value="selecione">Selecione uma opção</option>
+                        <option value="estudante">Estudante</option>
+                        <option value="entagiario">Estagiário</option>
+                        <option value="engenheiro">Engenheiro</option>
+                        <option value="programador">Programador</option>
+                        <option value="Designer">Designer</option>
+                        <option value="outros">Outros</option>
+                </select>
+            </div>
+            <div>Você recomendaria o freeCodeCamp a um amigo?</div>
+            <div><input type="radio" name="irecomendaria" id="isim"><label for="isim">Sim</label></div>
+            <div><input type="radio" name="irecomendaria" id="inão"><label for="inão">Não</label></div>
+            <div><input type="radio" name="irecomendaria" id="italvez"><label for="italvez">Talvez</label></div>
+            <div><label for="ifavorito">Qual é o seu recurso favorito do freeCodeCamp?</label></div>
+            <div>
+                <select required name="favorito" id="ifavorito">
+                    <option disabled selected value="selecione">Selecione uma opção</option>
+                    <option value="comunidade">Comunidade</option>
+                    <option value="desafios">Desafios</option>
+                    <option value="projetos">Projetos</option>
+                    <option value="codigos">Código aberto</option>
+                </select>
+            </div>
+            <div>O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</div>
+            <div>
+                <div><input type="checkbox" id="ifront-end"><label for="ifront-end">Front-end Projects</label></input></div>
+                <div><input type="checkbox" id="iback-end"><label for="iback-end">Back-end Projects</label></input></div>
+                <div><input type="checkbox" id="idatav"><label for="idatav">Data Visualization</label></input></div>
+                <div><input type="checkbox" id="ichall"><label for="ichall">Challenges</label></input></div>
+                <div><input type="checkbox" id="iopen"><label for="iopen">Open Source Community</label></input></div>
+                <div><input type="checkbox" id="igitter"><label for="igitter">Gitter help rooms</label></input></div>
+                <div><input type="checkbox" id="ivideos"><label for="ivideos">Videos</label></input></div>
+                <div><input type="checkbox" id="icity"><label for="icity">City Meetups</label></input></div>
+                <div><input type="checkbox" id="iwiki"><label for="iwiki">Wiki</label></input></div>
+                <div><input type="checkbox" id="iforum"><label for="iforum">Forum</label></input></div>
+                <div><input type="checkbox" id="iaddcourses"><label for="iaddcourses">Additional Courses</label></input></div>
+            </div>
+            <div><label for="itextarea">Algum comentário ou sugestão?</label></div>
+            <div><textarea style="resize: none" name="textarena" id="itextarea" cols="40" rows="5"></textarea></div>
+            <div><input type="submit" value="Enviar"></div>
+    </section>
+    </form>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

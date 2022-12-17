@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(53, 53, 102);
+}
+
+section#titulo {
+    max-width: 700px;
+    margin: auto;
+    color: white;
+    text-shadow: 5px 0px 10px rgba(0, 0, 0, 0.397);
+}
+
+section#titulo > h1 {
+    font-size: 2.1em;
+    padding: 60px 30px 10px 30px;
+    text-align: center;
+}
+
+section#titulo > p {
+    padding: 0px 0px 50px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+section#formulario {
+    color: white;
+    background-color: #3f3f6e;
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.397);
+}
+
+input, select {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input[type=radio] {
+    margin: 0px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox] {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+input[type=text],input[type=email],input[type=number],textarea,input[type=submit], select {
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+    text-indent: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+div {
+    width: 100%;
+}
+
+
+input[type=submit] {
+    display: block;
+    padding: 10px;
+    background-color: rgb(107, 196, 107);
+    color: white;
+    margin: auto;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=number]:focus,select:focus {
+    transition: .2s;
+    box-shadow: 0 0 0 0.2rem #466d97;
+}
+
+#ifront-end {
+    margin-top: 20px;
+}
+
+#isim {
+    margin-top: 10px;
+}
+
+#italvez {
+    margin-bottom: 20px;
+}
+
+#iaddcourses {
+    margin-bottom: 20px;
+}
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+form {
+    padding: 30px;
+}
